@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Dip_XamarinExercises_SubTask3"
+             x:Class="Dip_XamarinExercises_SubTask3.MainPage"
+             Padding="20">
+
+    <ContentPage.Content>
+        <StackLayout BindingContext="{x:Reference slider}">
+            <Label x:Name="textsizelabel" Text="{Binding Path = Value, StringFormat='Font Size: {0:F0}'}"/>
+            <Label x:Name="randomquotelabel" Text="Click for quote" FontSize="{Binding Value}"/>
+            <Button x:Name="randomquotebutton" Text="Click Me" Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
